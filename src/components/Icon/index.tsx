@@ -54,6 +54,7 @@ import LanDisconnectIcon from 'mdi-react/LanDisconnectIcon';
 import LinkIcon from 'mdi-react/LinkIcon';
 import LinkedinIcon from 'mdi-react/LinkedinIcon';
 import LoadingIcon from 'mdi-react/LoadingIcon';
+import MapMarkerCheckIcon from 'mdi-react/MapMarkerCheckIcon';
 import MenuIcon from 'mdi-react/MenuIcon';
 import MenuRightIcon from 'mdi-react/MenuRightIcon';
 import MinusIcon from 'mdi-react/MinusIcon';
@@ -132,6 +133,7 @@ export enum IconType {
   link = 'link',
   linkedin = 'linkedin',
   loading = 'loading',
+  mapMarkerCheck = 'map-marker-check',
   menu = 'menu',
   menuRight = 'menu-right',
   minus = 'minus',
@@ -341,6 +343,8 @@ const Icon = forwardRef<HTMLDivElement, IconProps>(
           return <LinkedinIcon {...iconBaseProps} size={size || 24} />;
         case IconType.loading:
           return <LoadingIcon {...iconBaseProps} size={size || 24} />;
+        case IconType.mapMarkerCheck:
+          return <MapMarkerCheckIcon {...iconBaseProps} size={size || 24} />;
         case IconType.menu:
           return <MenuIcon {...iconBaseProps} size={size || 24} />;
         case IconType.menuRight:

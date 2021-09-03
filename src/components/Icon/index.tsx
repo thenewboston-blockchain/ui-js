@@ -43,6 +43,7 @@ import EyeOffIcon from 'mdi-react/EyeOffIcon';
 import FacebookIcon from 'mdi-react/FacebookIcon';
 import FileDocumentIcon from 'mdi-react/FileDocumentIcon';
 import FileDownloadIcon from 'mdi-react/FileDownloadIcon';
+import FilterMenuIcon from 'mdi-react/FilterMenuIcon';
 import ForumIcon from 'mdi-react/ForumIcon';
 import GithubIcon from 'mdi-react/GithubIcon';
 import HammerWrenchIcon from 'mdi-react/HammerWrenchIcon';
@@ -122,6 +123,7 @@ export enum IconType {
   facebook = 'facebook',
   fileDocument = 'file-document',
   fileDownload = 'file-download',
+  filterMenu = 'filter-menu',
   forum = 'forum',
   github = 'github',
   hammerWrench = 'hammer-wrench',
@@ -321,6 +323,8 @@ const Icon = forwardRef<HTMLDivElement, IconProps>(
           return <FileDocumentIcon {...iconBaseProps} size={size || 24} />;
         case IconType.fileDownload:
           return <FileDownloadIcon {...iconBaseProps} size={size || 24} />;
+        case IconType.filterMenu:
+          return <FilterMenuIcon {...iconBaseProps} size={size || 24} />;
         case IconType.forum:
           return <ForumIcon {...iconBaseProps} size={size || 24} />;
         case IconType.github:

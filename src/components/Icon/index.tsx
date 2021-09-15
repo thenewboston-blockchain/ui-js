@@ -46,6 +46,7 @@ import FileDownloadIcon from 'mdi-react/FileDownloadIcon';
 import FilterMenuIcon from 'mdi-react/FilterMenuIcon';
 import ForumIcon from 'mdi-react/ForumIcon';
 import GithubIcon from 'mdi-react/GithubIcon';
+import GoogleControllerIcon from 'mdi-react/GoogleControllerIcon';
 import HammerWrenchIcon from 'mdi-react/HammerWrenchIcon';
 import HumanHandsupIcon from 'mdi-react/HumanHandsupIcon';
 import InformationIcon from 'mdi-react/InformationIcon';
@@ -126,6 +127,7 @@ export enum IconType {
   filterMenu = 'filter-menu',
   forum = 'forum',
   github = 'github',
+  googleController = 'google-controller',
   hammerWrench = 'hammer-wrench',
   humanHandsup = 'human-handsup',
   information = 'information',
@@ -329,6 +331,8 @@ const Icon = forwardRef<HTMLDivElement, IconProps>(
           return <ForumIcon {...iconBaseProps} size={size || 24} />;
         case IconType.github:
           return <GithubIcon {...iconBaseProps} size={size || 24} />;
+        case IconType.googleController:
+          return <GoogleControllerIcon {...iconBaseProps} size={size || 24} />;
         case IconType.hammerWrench:
           return <HammerWrenchIcon {...iconBaseProps} size={size || 24} />;
         case IconType.humanHandsup:
